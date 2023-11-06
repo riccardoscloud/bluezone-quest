@@ -27,3 +27,21 @@ db = create_engine("sqlite:///database.db")
 def index():
     # Simple GET page, with content displayed conditionally of session
     return render_template("/index.html")
+
+# Homepage
+@app.route("/faq")
+def index():
+    # Simple GET page, with content displayed conditionally of session
+    return render_template("/faq.html")
+
+# Homepage
+@app.route("/privacy")
+def index():
+    # Simple GET page, with content displayed conditionally of session
+    return render_template("/privacy.html")
+
+# Homepage
+@app.route("/terms")
+def index():
+    # Simple GET page, with content displayed conditionally of session
+    return render_template("/terms.html")
