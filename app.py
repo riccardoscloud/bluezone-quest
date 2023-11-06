@@ -24,24 +24,24 @@ db = create_engine("sqlite:///database.db")
 # APP ROUTES #
 # Homepage
 @app.route("/")
-def index():
+def index_page():
     # Simple GET page, with content displayed conditionally of session
     return render_template("/index.html")
 
-# Homepage
+# FAQs
 @app.route("/faq")
-def index():
+def faq_page():
     # Simple GET page, with content displayed conditionally of session
     return render_template("/faq.html")
 
-# Homepage
+# Privacy policy
 @app.route("/privacy")
-def index():
+def privacy_page():
     # Simple GET page, with content displayed conditionally of session
     return render_template("/privacy.html")
 
-# Homepage
+# Terms of service
 @app.route("/terms")
-def index():
+def terms_page():
     # Simple GET page, with content displayed conditionally of session
     return render_template("/terms.html")
